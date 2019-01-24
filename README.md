@@ -1,0 +1,2 @@
+[![Build Status](https://travis-ci.org/abproject/pipe-array.svg?branch=master)](https://travis-ci.org/abproject/pipe-array)
+[![Coverage Status](https://coveralls.io/repos/github/abproject/pipe-array/badge.svg?branch=master)](https://coveralls.io/github/abproject/pipe-array?branch=master)
