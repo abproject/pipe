@@ -1,0 +1,45 @@
+{
+  "name": "pipe",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cover": "jest --collectCoverage",
+    "lint": "tslint --config ./tslint.json --project ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abproject/pipe.git"
+  },
+  "keywords": [],
+  "author": "Anton Bezpalov <bespalov.anton.88@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abproject/pipe/issues"
+  },
+  "homepage": "https://github.com/abproject/pipe#readme",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.13",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.4"
+  }
+}
