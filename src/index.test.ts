@@ -1,6 +1,7 @@
+import { sum } from './index';
+
 describe('test ', () => {
   test(`test`, () => {
-    expect(1).toEqual(1);
+    expect(sum(1, 2)).toEqual(3);
   });
-
 });
