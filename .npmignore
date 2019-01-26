@@ -1,2 +1,7 @@
+coverage/
 src/
 .travis.yml
+index.ts
+package-lock.json
+tsconfig.json
+tslint.json
