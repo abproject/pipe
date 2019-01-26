@@ -1,6 +1,6 @@
 {
   "name": "pipe-array",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,9 +15,9 @@
     "type": "git",
     "url": "git+https://github.com/abproject/pipe-array.git"
   },
-  "keywords": [],
+  "keywords": ["array", "pipe", "sequence", "stream"],
   "author": "Anton Bezpalov <bespalov.anton.88@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/abproject/pipe-array/issues"
   },
