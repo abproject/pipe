@@ -6,7 +6,7 @@ describe('Performance tests of pipe ', () => {
   const arraySize = 10e6;
   const array = Array.from({ length: arraySize }).map((_, i: number) => i);
 
-  test('For-loop: Map is slower <x3 times', () => {
+  test('For-loop: Map is slower <x4 times', () => {
     const forLoopFn = () => {
       const res = [];
       for (let i = 0; i < array.length; i += 1) {
@@ -22,10 +22,10 @@ describe('Performance tests of pipe ', () => {
       { label: 'for-loop', fn: forLoopFn },
       { label: 'pipe:map', fn: mapFn },
     ]);
-    expect(estimation['pipe:map']).toBeLessThan(estimation['for-loop'] * 3);
+    expect(estimation['pipe:map']).toBeLessThan(estimation['for-loop'] * 4);
   });
 
-  test('For-loop (optimized): Map is slower <x3 times', () => {
+  test('For-loop (optimized): Map is slower <x4 times', () => {
     const forLoopFn = () => {
       const res = [];
       const len = array.length;
@@ -42,10 +42,10 @@ describe('Performance tests of pipe ', () => {
       { label: 'for-loop', fn: forLoopFn },
       { label: 'pipe:map', fn: mapFn },
     ]);
-    expect(estimation['pipe:map']).toBeLessThan(estimation['for-loop'] * 3);
+    expect(estimation['pipe:map']).toBeLessThan(estimation['for-loop'] * 4);
   });
 
-  test('For-loop (optimized) x2: Map x2 is slower <x3 times', () => {
+  test('For-loop (optimized) x2: Map x2 is slower <x4 times', () => {
     const forLoopFn = () => {
       const res = [];
       const len = array.length;
@@ -66,7 +66,7 @@ describe('Performance tests of pipe ', () => {
       { label: 'for-loop', fn: forLoopFn },
       { label: 'pipe:map', fn: mapFn },
     ]);
-    expect(estimation['pipe:map']).toBeLessThan(estimation['for-loop'] * 3);
+    expect(estimation['pipe:map']).toBeLessThan(estimation['for-loop'] * 4);
   });
 
   test('For-of: Map is is slower <x3 times', () => {
