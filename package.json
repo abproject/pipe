@@ -1,11 +1,11 @@
 {
   "name": "pipe-array",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist/ && tsc",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cover": "jest --collectCoverage",
@@ -41,6 +41,8 @@
     "coveralls": "^3.0.2",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
     "typescript": "^3.2.4"
   }
 }

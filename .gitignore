@@ -60,3 +60,4 @@ typings/
 .npmignore
 
 coverage/
+dist/
